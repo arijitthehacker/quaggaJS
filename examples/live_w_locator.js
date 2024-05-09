@@ -1,4 +1,12 @@
 $(function() {
+    const refreshBtn = document.getElementById("btnRefresh");
+
+function handleClick() {
+  window.location.reload();
+}
+
+refreshBtn.addEventListener("click", handleClick);
+
     var App = {
         init : function() {
             Quagga.init(this.state, function(err) {
